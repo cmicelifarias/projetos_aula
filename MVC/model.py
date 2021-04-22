@@ -4,9 +4,8 @@ class Aluno:
         self.__user = user
         self.__senha = senha
 
-    def salva(self):
-        
-        registro = self.__user + " - " +self.__senha
+    def salva(self  ):
+        registro = self.__user + " - " +self.__senha  + " \n"
         arquivo = open("registro_aluno.txt","a")
         arquivo.writelines(registro)
 

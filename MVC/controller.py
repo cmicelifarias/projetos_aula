@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
-import model
+from model import Aluno
+#import model
 
 app = Flask(__name__)
 
@@ -21,7 +22,8 @@ def cadastro():
         if user == "" or senha == "":
             return "<h1>Por favor cadastre user e senha</h1>"
         else:
-            pessoa = model.Aluno(user,senha)
+            #pessoa = model.Aluno(user,senha)
+            pessoa = Aluno(user,senha)
             pessoa.salva()
             return "<h1>Registro salvo com sucesso</h1>"
 
