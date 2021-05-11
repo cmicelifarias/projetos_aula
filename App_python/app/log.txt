@@ -1,0 +1,2 @@
+2021/05/06 14:01:52 Micro started
+2021/05/06 14:02:07 blog.py blog.py
